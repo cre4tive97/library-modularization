@@ -1,4 +1,4 @@
-# library-modularization
+# chart
 
 ## Project setup
 ```
