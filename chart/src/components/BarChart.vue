@@ -6,11 +6,9 @@
 
 <script>
 /* eslint-disable */
-import Chart from "chart.js";
 export default {
   mounted() {
-    const ctx = this.$refs.barChart;
-    const myChart = new Chart(ctx, {
+    const myChart = new this.$_Chart(this.$refs.barChart, {
       type: "bar",
       data: {
         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],

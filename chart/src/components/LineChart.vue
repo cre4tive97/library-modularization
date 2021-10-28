@@ -5,12 +5,10 @@
 </template>
 
 <script>
-import Chart from "chart.js";
 /* eslint-disable */
 export default {
   mounted() {
-    const ctx = this.$refs.lineChart.getContext("2d");
-    const myChart = new Chart(ctx, {
+    const myChart = new this.$_Chart(this.$refs.lineChart.getContext("2d"), {
       type: "line",
       data: {
         labels: ["January", "February", "March", "April", "May", "June"],
